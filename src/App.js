@@ -5,27 +5,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { Link } from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-      <div>
+      <div className="bg-light pt-5 pb-5 shadow-sm">
       <br></br>
       <Container>
         <h1>Bak Zhangs</h1>
         <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
-          <Card
-            // bg={"Secondary".toLowerCase()}
-            // key={"Secondary"}
-            // text={"Secondary".toLowerCase() === 'light' ? 'dark' : 'white'}
-            style={{ width: '18rem' }}
-            // className="mb-2"
-          >
-              <Card.Img variant="top" src="/Images/BakZhang.png" />
+        <Row className="justify-content-center">
+          <Col className="col-auto mb-3 d-flex align-items-stretch" >
+          <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/BakZhang.png"} />
               <Card.Body>
                 <Card.Title>Bak Zhang</Card.Title>
                 <Card.Text>
@@ -35,9 +28,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/NyonyaZhang.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/NyonyaZhang.png"} />
               <Card.Body>
                 <Card.Title>Nyonya Zhang</Card.Title>
                 <Card.Text>
@@ -51,10 +44,10 @@ function App() {
         <br></br>
         <h1>Savoury</h1>
         <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+        <Row className="justify-content-center">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/PulutUdang.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/PulutUdang.png"} />
               <Card.Body>
                 <Card.Title>Pulut Udang/Panggang</Card.Title>
                 <Card.Text>
@@ -63,9 +56,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/SiewBaoPork.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/SiewBaoPork.png"} />
               <Card.Body>
                 <Card.Title>Pork Siew Bao</Card.Title>
                 <Card.Text>
@@ -75,9 +68,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/CurryPuffs.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/CurryPuffs.png"} />
               <Card.Body>
                 <Card.Title>Curry Puffs</Card.Title>
                 <Card.Text>
@@ -89,9 +82,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/PngKuih.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/PngKuih.png"} />
               <Card.Body>
                 <Card.Title>Png Kuih</Card.Title>
                 <Card.Text>
@@ -101,12 +94,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/ChaiKuih.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/ChaiKuih.png"} />
               <Card.Body>
                 <Card.Title>Chai Kuih</Card.Title>
                 <Card.Text>
@@ -115,9 +105,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/TauYewBak.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/TauYewBak.png"} />
               <Card.Body>
                 <Card.Title>Tau Yew Bak</Card.Title>
                 <Card.Text>
@@ -127,9 +117,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/MeeRebus.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/MeeRebus.png"} />
               <Card.Body>
                 <Card.Title>Mee Rebus</Card.Title>
                 <Card.Text>
@@ -139,9 +129,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/Acar.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/Acar.png"} />
               <Card.Body>
                 <Card.Title>Nyonya Acar Awak</Card.Title>
                 <Card.Text>
@@ -150,12 +140,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/WuTaoKo.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/WuTaoKo.png"} />
               <Card.Body>
                 <Card.Title>Wu Tao Ko</Card.Title>
                 <Card.Text>
@@ -165,9 +152,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/HakkaYamAbacus.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/HakkaYamAbacus.png"} />
               <Card.Body>
                 <Card.Title>Hakka Yam Abacus</Card.Title>
                 <Card.Text>
@@ -177,9 +164,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/NasiLemakBungkus.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/NasiLemakBungkus.png"} />
               <Card.Body>
                 <Card.Title>Nasi Lemak Bungkus</Card.Title>
                 <Card.Text>
@@ -190,14 +177,13 @@ function App() {
             </Card>
           </Col>
         </Row>
-      </Container>
       <br></br>
       <h1>Curry</h1>
       <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+        <Row className="justify-content-center">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/KapitanChickenCurry.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/KapitanChickenCurry.png"} />
               <Card.Body>
                 <Card.Title>Nyonya Kapitan chicken curry</Card.Title>
                 <Card.Text>
@@ -207,9 +193,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/MalaysianMuttonCurry.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/MalaysianMuttonCurry.png"} />
               <Card.Body>
                 <Card.Title>Malaysian mutton curry</Card.Title>
                 <Card.Text>
@@ -219,9 +205,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/BeefRendang.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/BeefRendang.png"} />
               <Card.Body>
                 <Card.Title>Beef Rendang</Card.Title>
                 <Card.Text>
@@ -231,9 +217,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/CurrySides.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/CurrySides.png"} />
               <Card.Body>
                 <Card.Title>Served With Curry</Card.Title>
                 <Card.Text>
@@ -248,8 +234,8 @@ function App() {
         <br></br>
         <h1>Nyonya Kuihs</h1>
         <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+        <Row className="justify-content-center">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
               <Card.Body>
                 <Card.Title>Kuihs</Card.Title>
@@ -259,9 +245,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/KuihKociPulutHitam.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/KuihKociPulutHitam.png"} />
               <Card.Body>
                 <Card.Title>Kuih Koci Pulut hitam</Card.Title>
                 <Card.Text>
@@ -270,9 +256,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/KuihTalam.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/KuihTalam.png"} />
               <Card.Body>
                 <Card.Title>Kuih Talam</Card.Title>
                 <Card.Text>
@@ -281,12 +267,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
-        <br></br>
-        <Row className="justify-content-md-center">
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/Serimuka.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/Serimuka.png"} />
               <Card.Body>
                 <Card.Title>Serimuka</Card.Title>
                 <Card.Text>
@@ -295,9 +278,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/AngkuKuih.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/AngkuKuih.png"} />
               <Card.Body>
                 <Card.Title>Angku Kuih</Card.Title>
                 <Card.Text>
@@ -306,9 +289,9 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md="auto">
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
-              <Card.Img variant="top" src="/Images/BingkaUbiKayu.png" />
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/BingkaUbiKayu.png"} />
               <Card.Body>
                 <Card.Title>BingkaUbiKayu</Card.Title>
                 <Card.Text>
@@ -318,7 +301,7 @@ function App() {
             </Card>
           </Col>
         </Row>
-
+        </Container>
       </div>
     </div>
   );
