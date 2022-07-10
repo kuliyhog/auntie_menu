@@ -107,6 +107,17 @@ function App() {
           </Col>
           <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
+              <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/KuChaiKuih.png"} />
+              <Card.Body className="card-body d-flex flex-column">
+                <Card.Title>Ku Chai Kuih</Card.Title>
+                <Card.Text>
+                </Card.Text>
+                <Button className="mt-auto" variant="primary">£6.80/5pcs</Button>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col className="col-auto mb-3 d-flex align-items-stretch">
+            <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/TauYewBak.png"} />
               <Card.Body className="card-body d-flex flex-column">
                 <Card.Title>Tau Yew Bak</Card.Title>
@@ -152,7 +163,7 @@ function App() {
               </Card.Body>
             </Card>
           </Col>
-          <Col className="col-auto mb-3 d-flex align-items-stretch">
+          {/* <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/HakkaYamAbacus.png"} />
               <Card.Body className="card-body d-flex flex-column">
@@ -163,7 +174,7 @@ function App() {
                 <Button className="mt-auto" variant="primary">£7.50/portion</Button>
               </Card.Body>
             </Card>
-          </Col>
+          </Col> */}
           <Col className="col-auto mb-3 d-flex align-items-stretch">
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/NasiLemakBungkus.png"} />
@@ -293,7 +304,7 @@ function App() {
             <Card style={{ width: '18rem' }}>
               <Card.Img variant="top" src={process.env.PUBLIC_URL + "/Images/BingkaUbiKayu.png"} />
               <Card.Body className="card-body d-flex flex-column">
-                <Card.Title>BingkaUbiKayu</Card.Title>
+                <Card.Title>Bingka Ubi Kayu</Card.Title>
                 <Card.Text>
                 </Card.Text>
                 <Button className="mt-auto" variant="primary">£1.50/pc</Button>
